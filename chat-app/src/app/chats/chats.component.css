@@ -1,0 +1,25 @@
+#main{
+    margin-top: 140px; 
+    /* width: 50%; */
+    /* width: 40%;  */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 400px; */
+} 
+#header-text{
+    text-align: center; 
+    font-size: 25px; 
+    /* width: 50%; */
+    font-weight: 500;
+}
+.list-group{
+    padding: 2vh;
+}
+.list-group-item{
+    width: 70vh;
+    font-weight: 600;
+    padding: 2vh;
+    font-size: 18px;
+}

@@ -1,0 +1,9 @@
+<div class="list-group" id="main">
+    <a href="#" class="list-group-item list-group-item-action active" id="header-text">
+      Chats
+    </a>
+    <ul class="list-group" *ngFor="let chat of chats"> 
+        <a [routerLink]="['/chat',chat.chatId]" (click)="setChatUserName(chat.chatUserNickName)" class="list-group-item list-group-item-action">{{chat.chatUserNickName}}</a>
+    </ul>
+    <!-- <h1>Hello</h1> -->
+  </div>

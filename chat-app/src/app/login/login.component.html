@@ -1,0 +1,21 @@
+<div class="main"> 
+    
+    <form class="form" [formGroup]="formGroup" (ngSubmit)="logIn()">
+        <div class="title">Login</div> 
+        <div class="input"> 
+            <input type="text" class="my-input" formControlName="userName" placeholder="Username">
+        </div> 
+        <div class="input"> 
+            <input type="password" class="my-input" formControlName="password" placeholder="Password">
+        </div> 
+        <div class="input"> 
+            <input type="submit" class="my-input btn btn-outline-success" value="Login">
+        </div> 
+        <div *ngIf="!isValid" class="alert alert-danger" role="alert">
+            {{ message }}
+        </div> 
+        <div *ngIf="isSuccessfully" class="alert alert-success" role="alert">
+            {{ message }}
+        </div>
+    </form>
+</div>

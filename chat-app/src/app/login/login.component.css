@@ -1,0 +1,41 @@
+.main{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20vh;
+    padding: 20px;
+} 
+.form{
+    /* margin-left: 500px; */
+    padding: 10px;
+    border: 3px black solid; 
+    text-align: center; 
+}
+
+.form .input{
+    margin: 5px; 
+    padding: 5px;  
+}
+.title{
+    font-size: 20px; 
+    padding: 5px; 
+    text-align: center; 
+    font-weight: bold;
+    position: relative;
+}  
+.my-input{
+    width: 280px;
+    padding: 5px; 
+    font-size: 18px;
+}
+#sub-btn{
+    border-radius: 4px;
+    background-color: black; 
+    color: white;
+} 
+#sub-btn:hover{
+    background-color: rgb(110, 96, 96);
+    color: whitesmoke; 
+    font-size: 20px;
+}

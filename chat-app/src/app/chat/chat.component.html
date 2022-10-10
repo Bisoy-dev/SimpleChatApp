@@ -1,0 +1,18 @@
+<div id="main">
+    <h2 id="user-chat-nickname">{{userChatNickName}}</h2>
+    <ul class="list-group" *ngFor="let message of messages">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          {{message.text}}
+          <span class="badge badge-primary badge-pill">{{message.userNickName}}</span>
+        </li>
+     </ul> 
+    <p *ngIf="messages.length == 0" id="con-message">No Conversation.</p> 
+    <div class="input-group mb-3" id="text-input">
+       <form class="input-group mb-3" [formGroup]="formGroup" (ngSubmit)="sendMessage()"> 
+        <input type="text" class="form-control" formControlName="text" placeholder="Write a message.." aria-label="Recipient's username" aria-describedby="basic-addon2"> 
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="submit">Send</button>
+        </div>
+       </form>
+    </div>
+</div> 

@@ -1,0 +1,15 @@
+p{
+    font-size: 40px;
+    font-weight: bolder; 
+    margin-top: 120px; 
+    margin-left: 400px;
+}
+.main-container{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-size: 45px;
+    font-weight: 500;
+}
